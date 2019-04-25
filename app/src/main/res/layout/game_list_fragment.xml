@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp" tools:srcCompat="@tools:sample/avatars"
+            android:id="@+id/GameView1" android:layout_marginTop="196dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="52dp" android:layout_marginStart="52dp"
+            android:contentDescription="@string/todo" android:scaleType="centerCrop"/>
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp" tools:srcCompat="@tools:sample/avatars"
+            android:id="@+id/GameView2"
+            app:layout_constraintTop_toTopOf="@+id/GameView1" app:layout_constraintBottom_toBottomOf="@+id/GameView1"
+            app:layout_constraintStart_toEndOf="@+id/GameView1" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:contentDescription="@string/todo" android:scaleType="centerCrop"/>
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp" tools:srcCompat="@tools:sample/avatars"
+            android:id="@+id/GameView3"
+            app:layout_constraintStart_toStartOf="@+id/GameView1"
+            app:layout_constraintEnd_toEndOf="@+id/GameView1"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/GameView1" android:contentDescription="@string/todo"
+            android:scaleType="center"/>
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp" tools:srcCompat="@tools:sample/avatars"
+            android:id="@+id/GameView4"
+            app:layout_constraintStart_toStartOf="@+id/GameView2"
+            app:layout_constraintEnd_toEndOf="@+id/GameView2"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/GameView2" android:contentDescription="@string/todo"
+            android:scaleType="center"/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline2" app:layout_constraintGuide_begin="205dp"
+                                          android:orientation="vertical"/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline" app:layout_constraintGuide_begin="352dp"
+                                          android:orientation="horizontal"/>
+</android.support.constraint.ConstraintLayout>
